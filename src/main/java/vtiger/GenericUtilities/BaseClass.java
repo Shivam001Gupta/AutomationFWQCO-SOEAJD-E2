@@ -41,7 +41,7 @@ public class BaseClass {
 	}
 	
 	//@Parameters("browser") //hold a value
-	//@BeforeTest
+	@BeforeTest
 	@BeforeClass(alwaysRun = true)
 	public void bcConfig(/*String BROWSER*/) throws Throwable
 	{
