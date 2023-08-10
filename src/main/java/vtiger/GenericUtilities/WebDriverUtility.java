@@ -308,7 +308,7 @@ public String takeScreenShot(WebDriver driver, String screenShotName) throws Thr
 {
 	TakesScreenshot ts = (TakesScreenshot) driver;
 	File src = ts.getScreenshotAs(OutputType.FILE);
-	File dst = new File ("C:\\Users\\Shivam Gupta\\eclipse-workspace\\AutomationFW.QCO-SOEAJD-E2\\Screenshots"+screenShotName+".png");
+	File dst = new File ("C:\\Users\\Shivam Gupta\\git\\repository\\AutomationFW.QCO-SOEAJD-E2\\Screenshots\\Screenshots"+screenShotName+".png");
 	Files.copy(src, dst); //This class is from commons IO tool
 	
 	return dst.getAbsolutePath(); //attach the screenshot to extent reports
